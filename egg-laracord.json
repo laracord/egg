@@ -1,0 +1,42 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2024-02-01T01:55:42-06:00",
+    "name": "Laracord",
+    "author": "brandon@tendency.me",
+    "description": "https:\/\/laracord.com",
+    "features": null,
+    "docker_images": {
+        "PHP 8": "ghcr.io\/razboy20\/pterodactyl-caddy:php8"
+    },
+    "file_denylist": [],
+    "startup": "php82 {{LARACORD}}",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"Successfully booted\",\r\n    \"userInteraction\": []\r\n}",
+        "logs": "{}",
+        "stop": "^SIGKILL"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/ash\r\n\r\ncd \/mnt\/server\r\n\r\napk --no-cache add curl git",
+            "container": "alpine:3.4",
+            "entrypoint": "ash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Laracord Binary",
+            "description": "The Laracord bot binary filename.",
+            "env_variable": "LARACORD",
+            "default_value": "laracord",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "present",
+            "field_type": "text"
+        }
+    ]
+}
