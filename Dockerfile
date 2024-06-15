@@ -1,4 +1,4 @@
-FROM php:8.3-alpine3.19
+FROM php:8.2-alpine3.19
 
 LABEL org.opencontainers.image.description "The official Laracord container for Pterodactyl-based panels."
 
