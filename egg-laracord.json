@@ -10,9 +10,9 @@
     "description": "https:\/\/laracord.com",
     "features": null,
     "docker_images": {
-        "PHP 8": "ghcr.io\/laracord\/laracord:php8",
-        "PHP 8.2": "ghcr.io\/laracord\/laracord:php8.2",
-        "PHP 8.3": "ghcr.io\/laracord\/laracord:php8.3"
+        "PHP 8": "ghcr.io\/laracord\/egg:php8",
+        "PHP 8.2": "ghcr.io\/laracord\/egg:php8.2",
+        "PHP 8.3": "ghcr.io\/laracord\/egg:php8.3"
     },
     "file_denylist": [],
     "startup": "php {{LARACORD}}",
